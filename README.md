@@ -6,8 +6,7 @@ various types of diagrams and different stages in a software engineering process
 
 ## Coursework Group Project
 
-- implemented an application that involves ``real-time data retrieval`` and ``cloud data storage``. Our group aims to implement a
-food-based ``Android mobile application`` that also allows user to find nearby carparks and their information.
+- implemented  a food-based ``Android mobile application`` that also allows user to find nearby carparks and their information by utilizing ``real-time data retrieval`` and ``cloud data storage``.
 
 Refer to the respective uploaded folders uploaded for more details.
 
