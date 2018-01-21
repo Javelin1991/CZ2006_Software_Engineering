@@ -2,7 +2,7 @@
 
 ## Learning Outcome
 I have learnt materials that are used in software engineering such as ``UML diagrams``, ``Class diagrams``, ``UseCase Diagrams`` and
-various types of diagrams and also studied about different stages in a software engineering process.
+various types of diagrams and also learnt about different stages in a software engineering process.
 
 ## Coursework Group Project
 
