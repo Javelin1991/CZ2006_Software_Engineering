@@ -12,7 +12,8 @@ various types of diagrams and also learnt about different stages in a software e
 - Enabled searching both restaurants and carparks by utilizing ``real-time data retrieval`` using google places API and data from https://data.gov.sg/ respectively 
 - the storage of the app users information is remote and implemented with ``cloud data storage``.
 
-Refer to the respective uploaded folders for more details.
+Refer to Coursework Project Report for more details. 
+For the project demonstration video : https://www.youtube.com/watch?v=QWGCBdcrFso&t=354s
 
 **Disclaimer : The source code that are used to implement the coursework project is no longer maintained. There may be errors or bugs that did not exist at the time of creation.**
 
