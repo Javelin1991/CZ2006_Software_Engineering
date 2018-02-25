@@ -13,7 +13,8 @@ various types of diagrams and also learnt about different stages in a software e
 - the storage of the app users information is remote and implemented with ``cloud data storage``.
 
 Refer to Coursework Project Report for more details. 
-For the project demonstration video : https://www.youtube.com/watch?v=QWGCBdcrFso&t=354s
+For the project demonstration video : 
+https://www.youtube.com/watch?v=QWGCBdcrFso&t=354s
 
 To refer to our app implementation code, please download our source code zipped file in the link below:
 https://drive.google.com/open?id=1FDKIsboZiXgrmNfoC324yfX6uCat_7ue
