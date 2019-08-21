@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "373748426667",
+    "project_id": "firebase-seefood"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373748426667:android:df88c492a74bdb71",
+        "android_client_info": {
+          "package_name": "seaplus.seefood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373748426667-384lhgt22brt3uqqjcl2tsg02c659570.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "seaplus.seefood",
+            "certificate_hash": "7a3220aa2dd5d24b4d7d3dfd7b25a75da6ee4bda"
+          }
+        },
+        {
+          "client_id": "373748426667-hkhk793op883t9mlhlihvg2nv7vnu78i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYGmNlIxbw3FSCv4K-xxrmt03-oi1j_6I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

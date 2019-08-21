@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/nav_home" />
+
+        <item android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account"
+            android:title="@string/nav_account" />
+
+        <item android:id="@+id/nav_favourites"
+            android:icon="@drawable/ic_favourite"
+            android:title="@string/nav_favourites" />
+
+        <item android:id="@+id/action_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/action_logout"/>
+    </group>
+</menu>

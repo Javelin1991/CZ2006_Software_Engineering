@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff7b00</color>
+    <color name="colorPrimaryDark">#ff7b00</color>
+    <color name="colorAccent">#ff7b00</color>
+    <color name="restaurant_name">#fff</color>
+    <color name="restaurant_rate">#fff</color>
+    <color name="restaurant_price">#fff</color>
+    <color name="restaurant_rating_bg">#000</color>
+    <color name="restaurant_details">#000</color>
+    <color name="divider">#ebebeb</color>
+    <color name="iconText">#000</color>
+    <color name="text">#fff</color>
+    <color name="blacktext">#000</color>
+    <color name="colorAccentSecondary">#008060</color>
+    <color name="colorButtonText">#fff</color>
+    <color name="splash_screen_bg">#fff</color>
+    <color name="colorTranslucent">#00000000</color>
+</resources>

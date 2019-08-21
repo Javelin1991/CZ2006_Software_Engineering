@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="seaplus.seefood.controller.FilterSortActivity">
+
+
+    <include layout="@layout/activity_toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="55dp">
+
+
+        <LinearLayout
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            //rating layout
+            <LinearLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_ratingstar"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Rating"
+                        android:textSize="17dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/blacktext"
+                        />
+                </LinearLayout>
+                <com.appyvet.rangebar.RangeBar
+                    xmlns:custom="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ratingRangeBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    custom:tickStart="0"
+                    custom:tickInterval="0.5"
+                    custom:tickEnd="5"
+                    custom:tickColor="@color/colorAccent"
+                    custom:selectorColor="@color/colorAccent"
+                    custom:pinColor="@color/colorAccent"
+                    custom:connectingLineColor="@color/colorAccent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <Button
+                        android:clickable="false"
+                        android:id="@+id/ratingRangeStart"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:layout_marginRight="10dp"
+                        android:text="0.0"
+                        android:theme="@style/Range.Button"
+                        android:layout_marginLeft="16dp"
+                        />
+
+                    <Button
+                        android:clickable="false"
+                        android:id="@+id/ratingRangeEnd"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:text="5.0"
+                        android:layout_marginLeft="10dp"
+                        android:theme="@style/Range.Button"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            //divider
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+
+            //price layout
+            <LinearLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_price"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Price"
+                        android:textSize="17dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/blacktext"
+                        />
+                </LinearLayout>
+                <com.appyvet.rangebar.RangeBar
+                    xmlns:custom="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/priceRangeBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    custom:tickStart="1"
+                    custom:tickInterval="1"
+                    custom:tickEnd="5"
+                    custom:tickColor="@color/colorAccent"
+                    custom:selectorColor="@color/colorAccent"
+                    custom:pinColor="@color/colorAccent"
+                    custom:connectingLineColor="@color/colorAccent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <Button
+                        android:clickable="false"
+                        android:id="@+id/priceRangeStart"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:layout_marginRight="10dp"
+                        android:text="$"
+                        android:theme="@style/Range.Button"
+                        android:layout_marginLeft="16dp"
+                        />
+
+                    <Button
+                        android:clickable="false"
+                        android:id="@+id/priceRangeEnd"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:text="$$$$$"
+                        android:layout_marginLeft="10dp"
+                        android:theme="@style/Range.Button"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            //divider
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+
+            //sort layout
+            <LinearLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sort"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Sort"
+                        android:textSize="17dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/blacktext"
+                        />
+                </LinearLayout>
+
+                <Spinner
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:id="@+id/sortSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    />
+
+            </LinearLayout>
+
+            //divider
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+
+            <Button
+                android:id="@+id/FilterSortBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="90dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:theme="@style/AppTheme.Button"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

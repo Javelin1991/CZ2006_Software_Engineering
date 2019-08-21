@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "seaplus.seefood"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.google.com' }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // Glide image library
+    //compile 'com.google.android.gms:play-services:9.2.0'
+    compile files('libs/activation.jar')
+    compile files('libs/additionnal.jar')
+    compile files('libs/mail.jar')
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:26.+'
+    compile 'com.android.support:support-v4:26.+'
+    compile 'com.github.bumptech.glide:glide:4.1.1'
+    compile 'com.google.android.gms:play-services-location:11.4.0'
+    compile 'com.google.android.gms:play-services-places:11.4.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.parse:parse-android:1.16.3'
+    compile 'com.parse:parsefacebookutils-v4-android:1.10.4@aar'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.appyvet:materialrangebar:1.0'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.1.1'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/seefoodlogo" />
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login"
+        android:background="@color/com_facebook_blue"
+        android:onClick="fbLogin"
+        android:text="Log in with Facebook"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/newuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_button"
+        android:layout_marginTop="42dp"
+        android:text="New User"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccentSecondary" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccentSecondary" />
+
+    <!---Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_login"
+        android:gravity="center_horizontal"
+        android:src="@drawable/button_login"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        /> -->
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">SeeFood</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_favourites">Favourites</string>
+    <string name="action_logout">Logout</string>
+    <string name="facebook_app_id">401659560248748</string>
+    <string name="fb_login_protocol_scheme">fb401659560248748</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>HOME</item>
+        <item>ACCOUNT</item>
+        <item>FAVOURITES</item>
+        <item>LOGOUT</item>
+    </string-array>
+
+    <string-array name="sort_array">
+        <item>None</item>
+        <item>Alphabetical (A -> Z)</item>
+        <item>Alphabetical (Z -> A)</item>
+        <item>Price (Low to High)</item>
+        <item>Price (High to Low)</item>
+        <item>Rating (Low to High)</item>
+        <item>Rating (High to Low)</item>
+    </string-array>
+
+    <string name="title_activity_main_navigation">MainNavigationActivity</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>
